@@ -1,0 +1,13 @@
+{
+	"name": "seebz/oo-curl",
+	"description": "Provides some classes for working with cURL in an object-oriented way",
+	"license": "WTFPL",
+	"authors": [{
+		"name": "Sébastien Corne",
+		"email": "sebastien@seebz.net"
+	}],
+	"type": "library",
+	"autoload": {
+		"classmap": ["lib"]
+	}
+}
