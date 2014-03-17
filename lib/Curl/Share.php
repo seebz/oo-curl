@@ -1,7 +1,9 @@
 <?php
 
+namespace Curl;
 
-class CurlShare
+
+class Share
 {
 
 	/**

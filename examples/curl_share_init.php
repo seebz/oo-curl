@@ -1,8 +1,7 @@
 <?php
 
 include '../lib/Curl.php';
-include '../lib/CurlMulti.php';
-include '../lib/CurlShare.php';
+include '../lib/Curl/Share.php';
 
 
 
@@ -13,7 +12,7 @@ include '../lib/CurlShare.php';
  */
 
 // Create cURL share handle and set it to share cookie data
-$sh = new CurlShare();
+$sh = new Curl\Share();
 $sh->setopt(CURLSHOPT_SHARE, CURL_LOCK_DATA_COOKIE);
 
 // Initialize the first cURL handle and assign the share handle to it

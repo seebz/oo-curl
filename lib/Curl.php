@@ -206,9 +206,9 @@ class Curl
 
 	protected function _force_resource($value)
 	{
-		if ($value instanceof Curl
-			|| $value instanceof CurlMulti
-			|| $value instanceof CurlShare
+		if ($value instanceof \Curl
+			|| $value instanceof \Curl\Multi
+			|| $value instanceof \Curl\Share
 		) {
 			$value = $value->resource();
 		}

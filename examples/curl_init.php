@@ -1,8 +1,6 @@
 <?php
 
 include '../lib/Curl.php';
-include '../lib/CurlMulti.php';
-include '../lib/CurlShare.php';
 
 
 

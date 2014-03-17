@@ -1,7 +1,9 @@
 <?php
 
+namespace Curl;
 
-class CurlMulti
+
+class Multi
 {
 
 	/**
@@ -34,7 +36,7 @@ class CurlMulti
 	 */
 	public function add_handle($ch)
 	{
-		if ($ch instanceof Curl) {
+		if ($ch instanceof \Curl) {
 			$ch = $ch->resource();
 		}
 		return curl_multi_add_handle($this->_mh, $ch);
@@ -104,7 +106,7 @@ class CurlMulti
 	 */
 	public function remove_handle($ch)
 	{
-		if ($ch instanceof Curl) {
+		if ($ch instanceof \Curl) {
 			$ch = $ch->resource();
 		}
 		return curl_multi_remove_handle($this->_mh, $ch);

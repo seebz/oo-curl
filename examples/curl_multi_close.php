@@ -1,8 +1,7 @@
 <?php
 
 include '../lib/Curl.php';
-include '../lib/CurlMulti.php';
-include '../lib/CurlShare.php';
+include '../lib/Curl/Multi.php';
 
 
 
@@ -23,7 +22,7 @@ $ch2->setopt(CURLOPT_URL, "http://www.php.net/");
 $ch2->setopt(CURLOPT_HEADER, 0);
 
 //create the multiple cURL handle
-$mh = new CurlMulti();
+$mh = new Curl\Multi();
 
 //add the two handles
 $mh->add_handle($ch1);
